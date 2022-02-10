@@ -1,0 +1,657 @@
+h2,
+h3,
+h4,
+h5 {
+  color: #024052;
+}
+
+p {
+  color: #026986;
+  font-size: 1.18em;
+  font-weight: 500;
+}
+
+.inspire {
+  background-image: url("../../assets/man_wearing_headphones-flat.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 50em;
+  -webkit-box-shadow: #0d22339e 2em 3em 3.5em;
+          box-shadow: #0d22339e 2em 3em 3.5em;
+}
+
+@media (min-width: 1681px) {
+  .inspire {
+    height: 57em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .inspire {
+    background-size: 130% 100%;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  .inspire {
+    background-size: 130% 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .inspire {
+    background-image: url("../../assets/man_wearing_headphones-flat-mobile.png");
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .inspire {
+    background-image: url("../../assets/man_wearing_headphones-flat-mobile.png");
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .inspire {
+    background-image: url("../../assets/man_wearing_headphones-flat-mobile.png");
+  }
+}
+
+.inspire h2 {
+  font-size: 3em;
+  margin-top: 0;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  color: white;
+}
+
+.inspire ul {
+  margin-top: 8em;
+  margin-left: 4em;
+  list-style: none;
+  padding-left: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.inspire ul li {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 360px) {
+  .inspire ul li {
+    color: #00bdf5;
+    text-shadow: 2px 2px #0f495f;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .inspire ul li {
+    color: #00bdf5;
+    text-shadow: 2px 2px #0f495f;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .inspire ul li {
+    color: #00bdf5;
+    text-shadow: 2px 2px #0f495f;
+    font-weight: 700;
+  }
+}
+
+.inspire ul li p {
+  color: white;
+  font-size: 0.7em;
+  margin-left: 3.75em;
+  margin-top: 0;
+}
+
+@media (max-width: 360px) {
+  .inspire ul li p {
+    color: #f956ff;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .inspire ul li p {
+    color: #f956ff;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .inspire ul li p {
+    color: #f956ff;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}
+
+.inspire ul li::before {
+  content: "";
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background-image: url("../../assets/music-note.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 6em;
+  margin-top: 2em;
+}
+
+#products::before {
+  display: block;
+  content: " ";
+  margin-top: 6em;
+  height: 6em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#products .product {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 6em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 360px) {
+  #products .product {
+    width: 90%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #products .product {
+    width: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #products .product {
+    width: 90%;
+  }
+}
+
+#products .product img {
+  width: 90%;
+  height: 25em;
+  border-radius: 2em;
+  margin: 0 auto;
+  border: 2px solid #707070;
+  -webkit-box-shadow: #113048 0.35em 1em 2em;
+          box-shadow: #113048 0.35em 1em 2em;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #products .product img {
+    height: 15em;
+  }
+}
+
+#products .product h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1.25em;
+}
+
+#products .product p {
+  font-weight: 500;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.15em;
+}
+
+@media (max-width: 360px) {
+  #products .product p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #products .product p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #products .product p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #products .product p {
+    font-size: 1em;
+  }
+}
+
+#about {
+  width: 55%;
+  margin: 1.5em auto 5em;
+}
+
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: 6em;
+  height: 6em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 360px) {
+  #about {
+    width: 90%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #about {
+    width: 90%;
+  }
+}
+
+#about h3 {
+  color: white;
+  font-size: 1.8em;
+  background: #13384f;
+  border: 2px solid #707070;
+  border-radius: 0.5em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.25em 0.75em;
+  margin: auto;
+}
+
+@media (max-width: 360px) {
+  #about h3 {
+    padding: 0.25em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #about h3 {
+    padding: 0.25em;
+  }
+}
+
+#about h3 span {
+  margin-left: 0.5em;
+  color: #4abdf5;
+}
+
+#about p {
+  color: #026986;
+}
+
+@media (max-width: 360px) {
+  #about p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #about p {
+    text-align: center;
+  }
+}
+
+.loops {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 6em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  .loops {
+    width: 85%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .loops {
+    width: 85%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .loops {
+    width: 85%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .loops {
+    width: 85%;
+  }
+}
+
+.loops h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.loops img {
+  width: 90%;
+  height: 35em;
+  border-radius: 2em;
+  margin: 0 auto;
+  border: 2px solid #707070;
+  -webkit-box-shadow: #113048 0.35em 1em 2em;
+          box-shadow: #113048 0.35em 1em 2em;
+}
+
+@media (max-width: 360px) {
+  .loops img {
+    height: 25em;
+    width: 95%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .loops img {
+    height: 25em;
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .loops img {
+    height: 25em;
+    width: 95%;
+  }
+}
+
+.loops p {
+  font-weight: 500;
+  width: 75%;
+  margin: 2em auto;
+  text-align: justify;
+}
+
+.loops p span {
+  font-weight: 900;
+}
+
+#pricing {
+  text-align: center;
+  margin: 2em auto 10em;
+}
+
+#pricing::before {
+  display: block;
+  content: " ";
+  margin-top: 6em;
+  height: 6em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#pricing h2 {
+  font-size: 3em;
+  line-height: 0.75em;
+}
+
+@media (max-width: 360px) {
+  #pricing h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #pricing h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #pricing h2 {
+    font-size: 2.5em;
+  }
+}
+
+#pricing h2 span {
+  font-size: 0.4em;
+  margin-top: 0;
+}
+
+#pricing table {
+  margin: auto;
+  width: 75%;
+  height: 25em;
+  color: white;
+  font-weight: 300;
+  font-size: 1.15em;
+  border-radius: 1.5em;
+  background-image: url("../../assets/pricing_chart_bkgrnd.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-collapse: collapse;
+}
+
+@media (max-width: 360px) {
+  #pricing table {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #pricing table {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #pricing table {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1681px) {
+  #pricing table {
+    height: 30em;
+    font-size: 1.25em;
+  }
+}
+
+#pricing table th {
+  border-bottom: 2px solid white;
+  font-weight: 700;
+}
+
+@media (max-width: 360px) {
+  #pricing table th:first-child {
+    width: 43%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #pricing table th:first-child {
+    width: 43%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #pricing table th:first-child {
+    width: 43%;
+  }
+}
+
+#pricing table tbody tr td {
+  border-right: 2px solid white;
+  font-weight: 900;
+}
+
+#pricing table tbody tr td:first-child {
+  font-weight: 700;
+}
+
+#pricing table tbody tr:last-child td {
+  padding-bottom: 1em;
+}
+
+#faq {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 6em;
+}
+
+#faq::before {
+  display: block;
+  content: " ";
+  margin-top: 3.65em;
+  height: 3.65em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#faq h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+@media (max-width: 360px) {
+  #faq h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #faq h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #faq h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #faq h2 {
+    font-size: 2.4em;
+  }
+}
+
+#faq .question,
+#faq .answer span {
+  font-weight: 700;
+  color: #024052;
+}
+
+#faq .question {
+  cursor: pointer;
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 360px) {
+  #faq .question {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #faq .question {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #faq .question {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #faq .question {
+    font-size: 1.4em;
+  }
+}
+
+#faq .answer {
+  -webkit-transition: max-height 0.35s ease-out;
+  transition: max-height 0.35s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0.125em;
+  font-size: 1.35em;
+}
+
+@media (max-width: 360px) {
+  #faq .answer {
+    font-size: 1.15em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #faq .answer {
+    font-size: 1.15em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #faq .answer {
+    font-size: 1.15em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #faq .answer {
+    font-size: 1.15em;
+  }
+}
+
+#faq .active {
+  color: #707070;
+}
+
+#faq .hide {
+  max-height: 0;
+}
+/*# sourceMappingURL=index.css.map */

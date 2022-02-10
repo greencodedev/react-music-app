@@ -1,0 +1,355 @@
+body {
+  background: black !important;
+  color: #c3c1c1;
+  text-transform: uppercase;
+}
+
+.subscription-plan {
+  text-align: center;
+}
+
+.top {
+  border-bottom: 1px solid #c3c1c1;
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.top div {
+  margin: 2em 0;
+}
+
+.top div h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #c3c1c1;
+}
+
+.top div .renew {
+  font-size: 1em;
+  color: #c3c1c1;
+  margin-bottom: 0;
+  word-spacing: 0.1em;
+}
+
+.choose-card {
+  margin: 2em auto 2em 2em;
+  font-size: 1em;
+  word-spacing: 0.1em;
+}
+
+#subscription-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 6em;
+  font-family: Helvetica Neue, Helvetica, Poppins;
+  font-weight: 600;
+}
+
+@media (max-width: 360px) {
+  #subscription-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #subscription-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #subscription-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #subscription-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#subscription-cards .card {
+  background: black;
+  text-align: center;
+  padding: 0.5em 1em;
+  border: 4px solid #0f495f;
+  height: 36em;
+  width: 25%;
+  position: relative;
+  font-size: 1.35em;
+  border-radius: 1em;
+  cursor: pointer;
+  overflow: scroll;
+}
+
+@media (max-width: 360px) {
+  #subscription-cards .card {
+    width: 70%;
+    margin-bottom: 5em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #subscription-cards .card {
+    width: 70%;
+    margin-bottom: 5em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #subscription-cards .card {
+    width: 70%;
+    margin-bottom: 5em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #subscription-cards .card {
+    width: 70%;
+    margin-bottom: 5em;
+  }
+}
+
+#subscription-cards .card h2 {
+  color: #eb6662;
+  margin: 0.5em auto;
+  border-radius: 1em;
+  padding: 0.5em 0;
+  text-shadow: 2px 3px 8px black;
+  letter-spacing: 0.125em;
+  font-size: 2em;
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  #subscription-cards .card h2 {
+    font-size: 1.7em;
+  }
+}
+
+#subscription-cards .card .discount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #00bdf5;
+  color: black;
+  border-radius: 0 1em;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding: 0.125em 1em;
+  border-top: 1px solid #c3c1c1;
+  border-right: 1px solid #c3c1c1;
+}
+
+#subscription-cards .card .info {
+  background: black;
+  padding: 0.25em 0.5em;
+  border-radius: 1em;
+  position: absolute;
+  top: 6.5em;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  #subscription-cards .card .info {
+    left: 0;
+    right: 0;
+  }
+}
+
+#subscription-cards .card .info .download {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+#subscription-cards .card .info .credits {
+  color: #00bdf5;
+  font-size: 1.5em;
+  white-space: nowrap;
+  margin: 0.25em auto 0.5em;
+  font-weight: 500;
+}
+
+#subscription-cards .card .info .price {
+  margin: 0 auto;
+  font-size: 1.25em;
+  letter-spacing: 0.075em;
+}
+
+#subscription-cards .card .info .month {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+#subscription-cards .card .info ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 2em auto 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+}
+
+#subscription-cards .card .info ul .included {
+  color: #00bdf5;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#subscription-cards .card .info ul li {
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+@media (max-width: 360px) {
+  #subscription-cards .card .info ul li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #subscription-cards .card .info ul li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #subscription-cards .card .info ul li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #subscription-cards .card .info ul li {
+    text-align: center;
+  }
+}
+
+.payment {
+  margin-bottom: 7em;
+}
+
+@media (max-width: 360px) {
+  .payment {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .payment {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .payment {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .payment {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.payment h3 {
+  color: #c3c1c1;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.payment div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 360px) {
+  .payment div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .payment div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .payment div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .payment div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.payment div .paypal-logo {
+  height: 10em;
+  width: 25em;
+}
+/*# sourceMappingURL=subscriptions.css.map */

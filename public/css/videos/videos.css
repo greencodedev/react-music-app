@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em auto;
+}
+
+#videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#videos .video {
+  width: 30%;
+  margin: 0 auto 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #videos .video {
+    width: 43%;
+  }
+}
+
+@media (max-width: 360px) {
+  #videos .video {
+    width: 95%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #videos .video {
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #videos .video {
+    width: 95%;
+  }
+}
+
+#videos .video h3 {
+  text-align: center;
+  height: 3em;
+}
+
+#videos .video iframe {
+  width: 95%;
+  height: 15em;
+}
+
+#videos .video p {
+  width: 90%;
+  text-align: justify;
+}
+/*# sourceMappingURL=videos.css.map */

@@ -1,0 +1,73 @@
+@import "../utils/mixins.scss";
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em auto;
+}
+#plugins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .plugin {
+    // display: block;
+    width: 30%;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+
+    div {
+      // border: 2px solid black;
+      // width: 100%;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // margin: 0 auto 3em;
+    }
+
+    @include breakpoint(m) {
+      width: 43%;
+    }
+    @include breakpoint(xxs, xs, s) {
+      width: 95%;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 0.25em;
+      // height: 3em;
+    }
+    .access-tier {
+      color: $lightBlue;
+      font-size: 1.2em;
+      // text-shadow: 0px 1px black;
+      margin-bottom: 0.25em;
+    }
+    img {
+      width: 95%;
+      height: 24em;
+      border: 2px solid black;
+    }
+    p {
+      width: 90%;
+      text-align: justify;
+      font-size: 1.2em;
+    }
+    a {
+      .download-btn {
+        // margin: auto;
+        font-size: 1.25em;
+        border-radius: 0.35em;
+        background: $teal;
+        color: $lightBlue;
+        padding: 0.25em 0.5em;
+        cursor: pointer;
+      }
+    }
+  }
+}

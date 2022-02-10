@@ -1,0 +1,302 @@
+@import "../utils/mixins.scss";
+
+h2,
+h3,
+h4,
+h5 {
+  color: #024052;
+}
+p {
+  color: #026986;
+  font-size: 1.18em;
+  font-weight: 500;
+}
+
+.inspire {
+  background-image: url("../../assets/man_wearing_headphones-flat.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 50em;
+  box-shadow: #0d22339e 2em 3em 3.5em;
+  @include breakpoint(xxl) {
+    height: 57em;
+  }
+
+  @include breakpoint(m, l) {
+    background-size: 130% 100%;
+  }
+  @include breakpoint(xxs, xs, s) {
+    background-image: url("../../assets/man_wearing_headphones-flat-mobile.png");
+  }
+
+  h2 {
+    font-size: 3em;
+    margin-top: 0;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    color: white;
+  }
+  ul {
+    margin-top: 8em;
+    margin-left: 4em;
+    list-style: none;
+    padding-left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    li {
+      color: white;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      @include breakpoint(xxs, xs, s) {
+        color: $lightBlue;
+        text-shadow: 2px 2px $teal;
+        font-weight: 700;
+      }
+
+      p {
+        color: white;
+        font-size: 0.7em;
+        margin-left: 3.75em;
+        margin-top: 0;
+        @include breakpoint(xxs, xs, s) {
+          color: #f956ff;
+          font-size: 0.8em;
+          font-weight: 500;
+        }
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        background-image: url("../../assets/music-note.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 6em;
+  margin-top: 2em;
+  @include navSpace(6em);
+
+  .product {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6em;
+    align-items: center;
+    @include breakpoint(xxs, xs, s) {
+      width: 90%;
+    }
+
+    img {
+      width: 90%;
+      height: 25em;
+      border-radius: 2em;
+      margin: 0 auto;
+      border: 2px solid $darkGrey;
+      box-shadow: #113048 0.35em 1em 2em;
+      @include breakpoint(m) {
+        height: 15em;
+      }
+    }
+    h3 {
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 1.25em;
+    }
+    p {
+      font-weight: 500;
+      width: 75%;
+      margin: 0 auto;
+      font-size: 1.15em;
+      @include breakpoint(xxs, xs, s, m) {
+        font-size: 1em;
+      }
+    }
+  }
+}
+#about {
+  @include navSpace(6em);
+  width: 55%;
+  margin: 1.5em auto 5em;
+  @include breakpoint(xxs, xs) {
+    width: 90%;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1.8em;
+    background: #13384f;
+    border: 2px solid $darkGrey;
+    border-radius: 0.5em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0.25em 0.75em;
+    margin: auto;
+    @include breakpoint(xxs, xs) {
+      padding: 0.25em;
+    }
+
+    span {
+      margin-left: 0.5em;
+      color: #4abdf5;
+    }
+  }
+  p {
+    color: #026986;
+    @include breakpoint(xxs, xs) {
+      text-align: center;
+    }
+  }
+}
+.loops {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6em;
+  align-items: center;
+  margin: 0 auto;
+  @include breakpoint(xxs, xs, s, m) {
+    width: 85%;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  img {
+    width: 90%;
+    height: 35em;
+    border-radius: 2em;
+    margin: 0 auto;
+    border: 2px solid$darkGrey;
+    box-shadow: #113048 0.35em 1em 2em;
+    @include breakpoint(xxs, xs, s) {
+      height: 25em;
+      width: 95%;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    width: 75%;
+    margin: 2em auto;
+    text-align: justify;
+    span {
+      font-weight: 900;
+    }
+  }
+}
+#pricing {
+  text-align: center;
+  margin: 2em auto 10em;
+  @include navSpace(6em);
+  h2 {
+    font-size: 3em;
+    line-height: 0.75em;
+    @include breakpoint(xxs, xs, s) {
+      font-size: 2.5em;
+    }
+    span {
+      font-size: 0.4em;
+      margin-top: 0;
+    }
+  }
+  table {
+    margin: auto;
+    width: 75%;
+    height: 25em;
+    color: white;
+    font-weight: 300;
+    font-size: 1.15em;
+    border-radius: 1.5em;
+    background-image: url("../../assets/pricing_chart_bkgrnd.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-collapse: collapse;
+    @include breakpoint(xxs, xs, s) {
+      width: 100%;
+      font-size: 1em;
+    }
+    @include breakpoint(xxl) {
+      height: 30em;
+      font-size: 1.25em;
+    }
+
+    th {
+      border-bottom: 2px solid white;
+      font-weight: 700;
+      @include breakpoint(xxs, xs, s) {
+        &:first-child {
+          width: 43%;
+        }
+      }
+    }
+    tbody {
+      tr td {
+        border-right: 2px solid white;
+        font-weight: 900;
+        &:first-child {
+          font-weight: 700;
+        }
+      }
+      tr:last-child {
+        td {
+          padding-bottom: 1em;
+        }
+      }
+    }
+  }
+}
+#faq {
+  @include navSpace(3.65em);
+  width: 85%;
+  margin: auto;
+  margin-bottom: 6em;
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    @include breakpoint(xxs, xs, s, m) {
+      font-size: 2.4em;
+    }
+  }
+  .question,
+  .answer span {
+    font-weight: 700;
+    color: #024052;
+  }
+  .question {
+    cursor: pointer;
+    font-size: 1.6em;
+    margin-bottom: 0;
+    @include breakpoint(xxs, xs, s, m) {
+      font-size: 1.4em;
+    }
+  }
+  .answer {
+    transition: max-height 0.35s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.125em;
+    font-size: 1.35em;
+    @include breakpoint(xxs, xs, s, m) {
+      font-size: 1.15em;
+    }
+  }
+  .active {
+    color: $darkGrey;
+  }
+  .hide {
+    max-height: 0;
+  }
+}

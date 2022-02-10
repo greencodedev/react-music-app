@@ -1,0 +1,122 @@
+@import "../utils/mixins.scss";
+
+.pack-wrapper {
+  .error {
+    font-size: 3em;
+    padding: 0 1em;
+    margin: 2em auto 5em;
+    color: $error;
+    text-align: center;
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .pack-info {
+    border: 3px outset $lightGrey;
+    display: flex;
+    margin: 1em;
+    padding: 0.75em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.82),
+      rgba(2, 105, 134, 0.82) 34.1%,
+      rgba(2, 105, 134, 0.82) 73.6%,
+      rgba(0, 7, 8, 0.82) 100%,
+      rgba(0, 0, 0, 0.82)
+    );
+    img {
+      width: 12em;
+      border: 1px solid $lightGrey;
+    }
+    .pack-data {
+      margin: 0 2em;
+      font-size: 1.2em;
+      width: 100%;
+      h1 {
+        color: white;
+        text-shadow: 2px 2px black;
+        font-size: 2.2em;
+        margin: 0 auto;
+      }
+      .artist-tags {
+        display: flex;
+        align-items: center;
+        p,
+        .tags {
+          margin: 0.2em 0 1.5em;
+        }
+        .tags {
+          margin-left: 1em;
+          span {
+            margin-right: 0.25em;
+          }
+        }
+      }
+      .description {
+        border: 1px outset $lightGrey;
+        margin: 0;
+        height: 4em;
+        padding: 0.125em 0.25em;
+      }
+    }
+  }
+  .table-wrapper {
+    table {
+      margin: auto;
+      thead {
+        tr {
+          th {
+            margin-right: 0.5em;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 1.2em;
+          }
+          .head-name {
+          }
+        }
+      }
+      tbody {
+        td {
+          overflow: hidden;
+          text-align: left;
+        }
+        .exclusive {
+          color: coral;
+        }
+        .play-btn {
+          height: 2em;
+          padding: 0.2em;
+          border: 0.45em solid transparent;
+        }
+        .stream-spinner {
+          border: 0.45em dotted $lightGrey; /* Light grey */
+          border-top: 0.45em dotted $lightBlue; /* Blue */
+          border-radius: 50%;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        .name {
+          width: 20em;
+        }
+        .tempo {
+          width: 4em;
+        }
+        .key {
+          width: 4em;
+        }
+        .instrument-type {
+          width: 14em;
+        }
+        // .tags {
+        //   display: flex;
+        //   .tag {
+        //     padding: 0.125em 0.25em;
+        //     margin-right: 0.25em;
+        //     border: 1px solid black;
+        //     border-radius: 15%;
+        //   }
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,285 @@
+.auth-wrapper {
+  background: black !important;
+  color: #c3c1c1;
+  padding-bottom: 4em;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper h1,
+  .auth-wrapper h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper h1,
+  .auth-wrapper h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper h1,
+  .auth-wrapper h2 {
+    text-align: center;
+  }
+}
+
+.auth-wrapper h1 {
+  font-size: 2.75em;
+  border-bottom: 1px solid #707070;
+  margin-top: 0;
+  padding: 0.75em 0 0.75em 1em;
+}
+
+.auth-wrapper .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper .forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper .forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper .forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.auth-wrapper .forms .form {
+  border: 1px solid #707070;
+  width: 45%;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper .forms .form {
+    width: 90%;
+  }
+  .auth-wrapper .forms .form:first-child {
+    margin-bottom: 4em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper .forms .form {
+    width: 90%;
+  }
+  .auth-wrapper .forms .form:first-child {
+    margin-bottom: 4em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper .forms .form {
+    width: 90%;
+  }
+  .auth-wrapper .forms .form:first-child {
+    margin-bottom: 4em;
+  }
+}
+
+.auth-wrapper .forms .form h2 {
+  margin: 0;
+  padding: 0.5em;
+  border-bottom: 1px solid #707070;
+}
+
+.auth-wrapper .forms .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em 1em 3em 1em;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper .forms .form form {
+    padding-bottom: 2em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper .forms .form form {
+    padding-bottom: 2em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper .forms .form form {
+    padding-bottom: 2em;
+  }
+}
+
+.auth-wrapper .forms .form form p {
+  font-size: 0.8em;
+  margin: 0em 0 1.8em;
+}
+
+.auth-wrapper .forms .form form .errors {
+  margin-bottom: 0.5em;
+}
+
+.auth-wrapper .forms .form form .errors .error {
+  margin: 0 0 0.5em;
+  color: #f12538;
+}
+
+.auth-wrapper .forms .form form .errors span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-wrapper .forms .form form .success {
+  margin-top: 0;
+  font-size: 1em;
+  color: #7ff76f;
+}
+
+.auth-wrapper .forms .form form label {
+  color: #707070;
+  margin-bottom: 0.25em;
+  font-size: 0.85em;
+}
+
+.auth-wrapper .forms .form form input {
+  background: #0f495f;
+  border: none;
+  height: 2em;
+  margin-bottom: 1.5em;
+  color: #c3c1c1;
+  font-size: 1.2em;
+}
+
+.auth-wrapper .forms .form form input:last-of-type {
+  margin-bottom: 0.5em;
+}
+
+.auth-wrapper .forms .form form button {
+  border: none;
+  background: black;
+  color: #00bdf5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+.auth-wrapper .forms .form form button img {
+  margin-right: 0.5em;
+}
+
+.auth-wrapper .forms .form #register .info {
+  font-size: 1em;
+}
+
+.auth-wrapper .forms .form #register .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper .forms .form #register .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper .forms .form #register .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper .forms .form #register .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.auth-wrapper .forms .form #register .name div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 47%;
+}
+
+@media (max-width: 360px) {
+  .auth-wrapper .forms .form #register .name div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .auth-wrapper .forms .form #register .name div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .auth-wrapper .forms .form #register .name div {
+    width: 100%;
+  }
+}
+
+.auth-wrapper .forms .form #login a {
+  font-size: 0.8em;
+  color: #00bdf5;
+}
+/*# sourceMappingURL=auth.css.map */

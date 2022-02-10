@@ -1,0 +1,123 @@
+.pack-wrapper .error {
+  font-size: 3em;
+  padding: 0 1em;
+  margin: 2em auto 5em;
+  color: #f12538;
+  text-align: center;
+}
+
+.pack-wrapper .error span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pack-wrapper .pack-info {
+  border: 3px outset #c3c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 0.75em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.82)), color-stop(34.1%, rgba(2, 105, 134, 0.82)), color-stop(73.6%, rgba(2, 105, 134, 0.82)), color-stop(100%, rgba(0, 7, 8, 0.82)), to(rgba(0, 0, 0, 0.82)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(2, 105, 134, 0.82) 34.1%, rgba(2, 105, 134, 0.82) 73.6%, rgba(0, 7, 8, 0.82) 100%, rgba(0, 0, 0, 0.82));
+}
+
+.pack-wrapper .pack-info img {
+  width: 12em;
+  border: 1px solid #c3c1c1;
+}
+
+.pack-wrapper .pack-info .pack-data {
+  margin: 0 2em;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.pack-wrapper .pack-info .pack-data h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 2.2em;
+  margin: 0 auto;
+}
+
+.pack-wrapper .pack-info .pack-data .artist-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pack-wrapper .pack-info .pack-data .artist-tags p,
+.pack-wrapper .pack-info .pack-data .artist-tags .tags {
+  margin: 0.2em 0 1.5em;
+}
+
+.pack-wrapper .pack-info .pack-data .artist-tags .tags {
+  margin-left: 1em;
+}
+
+.pack-wrapper .pack-info .pack-data .artist-tags .tags span {
+  margin-right: 0.25em;
+}
+
+.pack-wrapper .pack-info .pack-data .description {
+  border: 1px outset #c3c1c1;
+  margin: 0;
+  height: 4em;
+  padding: 0.125em 0.25em;
+}
+
+.pack-wrapper .table-wrapper table {
+  margin: auto;
+}
+
+.pack-wrapper .table-wrapper table thead tr th {
+  margin-right: 0.5em;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.pack-wrapper .table-wrapper table tbody td {
+  overflow: hidden;
+  text-align: left;
+}
+
+.pack-wrapper .table-wrapper table tbody .exclusive {
+  color: coral;
+}
+
+.pack-wrapper .table-wrapper table tbody .play-btn {
+  height: 2em;
+  padding: 0.2em;
+  border: 0.45em solid transparent;
+}
+
+.pack-wrapper .table-wrapper table tbody .stream-spinner {
+  border: 0.45em dotted #c3c1c1;
+  /* Light grey */
+  border-top: 0.45em dotted #00bdf5;
+  /* Blue */
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.pack-wrapper .table-wrapper table tbody .name {
+  width: 20em;
+}
+
+.pack-wrapper .table-wrapper table tbody .tempo {
+  width: 4em;
+}
+
+.pack-wrapper .table-wrapper table tbody .key {
+  width: 4em;
+}
+
+.pack-wrapper .table-wrapper table tbody .instrument-type {
+  width: 14em;
+}
+/*# sourceMappingURL=pack.css.map */

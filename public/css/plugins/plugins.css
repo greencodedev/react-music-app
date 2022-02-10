@@ -1,0 +1,90 @@
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em auto;
+}
+
+#plugins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#plugins .plugin {
+  width: 30%;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #plugins .plugin {
+    width: 43%;
+  }
+}
+
+@media (max-width: 360px) {
+  #plugins .plugin {
+    width: 95%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #plugins .plugin {
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #plugins .plugin {
+    width: 95%;
+  }
+}
+
+#plugins .plugin h3 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 0.25em;
+}
+
+#plugins .plugin .access-tier {
+  color: #00bdf5;
+  font-size: 1.2em;
+  margin-bottom: 0.25em;
+}
+
+#plugins .plugin img {
+  width: 95%;
+  height: 24em;
+  border: 2px solid black;
+}
+
+#plugins .plugin p {
+  width: 90%;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+#plugins .plugin a .download-btn {
+  font-size: 1.25em;
+  border-radius: 0.35em;
+  background: #0f495f;
+  color: #00bdf5;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=plugins.css.map */

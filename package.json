@@ -1,0 +1,58 @@
+{
+  "name": "Sample.House-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.828.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-csp-header": "^4.0.0",
+    "express-validator": "^6.8.1",
+    "fs": "^0.0.1-security",
+    "graceful-fs": "^4.2.4",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.5",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.17",
+    "path": "^0.12.7",
+    "paypal-ipn": "^3.0.0",
+    "paypal-node-sdk": "^2.0.2",
+    "paypal-rest-sdk": "^1.8.1",
+    "s3": "^4.4.0",
+    "simple-youtube-api": "^5.2.1",
+    "uuid": "^8.3.2"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "scripts": {
+    "test": "knex seed: run --env testing && cross-env DB_ENV=testing jest --watchAll --verbose",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "concurrently 'yarn start' 'cd client && yarn start'",
+    "client": "cd client && yarn start",
+    "dbreset": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "dynamo": "cd /Users/braden/Documents/Programming/utils/dynamodb_local_latest && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "1sdc0d3r",
+  "license": "ISC"
+}

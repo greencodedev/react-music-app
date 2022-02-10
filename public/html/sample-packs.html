@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QE60PQMHYD"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QE60PQMHYD");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../SampleHouse_favicon-64.png" />
+    <link rel="stylesheet" href="../css/core.css" />
+    <link rel="stylesheet" href="../css/samplePacks/samplePacks.css" />
+    <title>Sample Packs</title>
+  </head>
+  <body>
+    <script src="../js/utils/jwt-decode.js"></script>
+    <script src="../js/utils/jwt-verify.js"></script>
+    <script type="module">
+      const token = window.localStorage.getItem("samplehousetoken");
+      if (!token || (token && !jwt_verify(jwt_decode(token))))
+        window.location = "/";
+    </script>
+    <header id="header"></header>
+    <nav id="sticky-nav"></nav>
+    <nav id="hamburger-menu"></nav>
+
+    <h1>Sample Packs</h1>
+    <div id="sample-packs"></div>
+    <script>
+      const packsDiv = document.getElementById("sample-packs");
+      const token = window.localStorage.getItem("samplehousetoken");
+      fetch("localhost:5001/api/audio/packs", {
+        method: "GET",
+        type: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          authorization: token,
+        },
+      }).then(async (resp) => {
+        resp = await resp.json();
+        resp.forEach(async (e) => {
+          e.url = await fetch(
+            `localhost:5001/api/audio/cover/${encodeURIComponent(
+              e.title
+            )}`,
+            {
+              method: "GET",
+              type: "cors",
+              headers: {
+                "Content-Type": "image/png",
+                authorization: token,
+              },
+            }
+          )
+            .then(async (res) => await res.json())
+            .then(({ data }) => `data:image/png;base64,${encode(data)}`);
+
+          const pack = document.createElement("div");
+          pack.className = "pack"; //? chain on createElement?
+          const title = document.createElement("h2");
+          title.innerText = e.title;
+          const link = document.createElement("a");
+          link.href = `pack#${e.title}`;
+          const img = document.createElement("img");
+          img.src = e.url;
+          const desc = document.createElement("p");
+          desc.innerText = e.description;
+          pack.appendChild(title);
+          link.appendChild(img);
+          pack.appendChild(link);
+          pack.appendChild(desc);
+          packsDiv.appendChild(pack);
+        });
+      });
+      function encode(data) {
+        var str = data.reduce(function (a, b) {
+          return a + String.fromCharCode(b);
+        }, "");
+        return btoa(str).replace(/.{76}(?=.)/g, "$&\n");
+      }
+    </script>
+
+    <footer id="footer"></footer>
+    <!--* Load React. -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--* Load React components -->
+    <script type="text/babel" src="../js/header.jsx"></script>
+    <script type="text/babel" src="../js/sticky-nav.jsx"></script>
+    <script type="text/babel" src="../js/hamburgerMenu.jsx"></script>
+    <script type="text/babel" src="../js/footer.jsx"></script>
+  </body>
+</html>

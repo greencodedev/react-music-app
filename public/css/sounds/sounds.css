@@ -1,0 +1,268 @@
+#sounds .home-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sounds .home-wrapper .sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sounds .home-wrapper .sound p {
+  margin: 0 0.5em;
+}
+
+#sounds .home-wrapper .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  color: #00bdf5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 4em;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 360px) {
+  #sounds .home-wrapper .search-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5em 1em;
+  }
+  #sounds .home-wrapper .search-wrapper h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #sounds .home-wrapper .search-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5em 1em;
+  }
+  #sounds .home-wrapper .search-wrapper h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #sounds .home-wrapper .search-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5em 1em;
+  }
+  #sounds .home-wrapper .search-wrapper h1 {
+    display: none;
+  }
+}
+
+#sounds .home-wrapper .search-wrapper .search-bar {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #sounds .home-wrapper .search-wrapper .search-bar {
+    width: 60%;
+  }
+}
+
+@media (max-width: 360px) {
+  #sounds .home-wrapper .search-wrapper .search-bar {
+    width: 80%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #sounds .home-wrapper .search-wrapper .search-bar {
+    width: 80%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #sounds .home-wrapper .search-wrapper .search-bar {
+    width: 80%;
+  }
+}
+
+#sounds .home-wrapper .search-wrapper .search-bar #search {
+  width: 75%;
+  border-radius: 2em;
+  margin-right: 1em;
+  background: #0f495f;
+  color: #c3c1c1;
+  border: 1px solid #00bdf5;
+  height: 1.5em;
+  font-size: 1.25em;
+  padding: 0.25em 0.5em;
+}
+
+#sounds .home-wrapper .search-wrapper .search-bar #search-btn {
+  padding: 0 0.75em;
+  font-size: 1.125em;
+  border-radius: 2em;
+  background: #0f495f;
+  color: #c3c1c1;
+  border: 1px solid #00bdf5;
+  cursor: pointer;
+}
+
+#sounds .home-wrapper .search-wrapper .search-bar .credits {
+  text-align: center;
+}
+
+#sounds .home-wrapper .sound-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+#sounds .home-wrapper .sound-wrapper aside {
+  color: #c3c1c1;
+  padding: 2em 3em 4em;
+  font-size: 1.2em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(34.1%, #026986), color-stop(73.6%, #026986), color-stop(100%, #000708), to(black));
+  background-image: linear-gradient(black, #026986 34.1%, #026986 73.6%, #000708 100%, black);
+  position: relative;
+}
+
+@media (max-width: 360px) {
+  #sounds .home-wrapper .sound-wrapper aside {
+    padding: 2em 1em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #sounds .home-wrapper .sound-wrapper aside {
+    padding: 2em 1em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #sounds .home-wrapper .sound-wrapper aside {
+    padding: 2em 1em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #sounds .home-wrapper .sound-wrapper aside {
+    padding: 2em 1em;
+  }
+}
+
+#sounds .home-wrapper .sound-wrapper aside h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#sounds .home-wrapper .sound-wrapper aside h3 {
+  cursor: pointer;
+}
+
+#sounds .home-wrapper .sound-wrapper aside .filter {
+  list-style: none;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+  max-height: 15em;
+  overflow: scroll;
+}
+
+#sounds .home-wrapper .sound-wrapper aside .filter h6 {
+  font-size: 0.95em;
+  margin: 0;
+}
+
+#sounds .home-wrapper .sound-wrapper aside .filter .selected {
+  color: #00bdf5;
+}
+
+#sounds .home-wrapper .sound-wrapper aside .reset-filter {
+  background: none;
+  color: #00bdf5;
+  font-size: 1.1em;
+  border: none;
+  padding: 0;
+  margin-top: 1em;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+}
+
+#sounds .home-wrapper .sound-wrapper div {
+  margin: 1em auto;
+  width: 100%;
+  overflow: auto;
+}
+
+#sounds .home-wrapper .sound-wrapper div .load-spinner {
+  width: 5em;
+  height: 5em;
+}
+
+#sounds .home-wrapper .sound-wrapper div .table-wrapper {
+  margin: auto;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sounds .home-wrapper .sound-wrapper div .table-wrapper table .name-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sounds .home-wrapper .sound-wrapper div .table-wrapper table .name-tags .tags {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0;
+}
+
+#sounds .home-wrapper .sound-wrapper div .table-wrapper .pagination {
+  margin: 2em auto;
+}
+
+#sounds .home-wrapper .sound-wrapper div .table-wrapper .pagination button {
+  margin: 0 0.75em;
+}
+
+footer {
+  border-top: 0;
+}
+/*# sourceMappingURL=sounds.css.map */

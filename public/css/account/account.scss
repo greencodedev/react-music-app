@@ -1,0 +1,75 @@
+@import "../utils/mixins.scss";
+
+body {
+  background: black !important;
+}
+#account {
+  margin: 4em;
+  color: $lightGrey;
+  .profile-info {
+    width: 80%;
+    // border-bottom: 1px solid $lightGrey;
+    padding-bottom: 0.25em;
+    margin-bottom: 7em;
+
+    &,
+    p {
+      //? this doesn't work with default 100% and just bp xxl as 80%...
+      @include breakpoint(xxs, xs, s, m, l, xl) {
+        width: 100%;
+      }
+    }
+
+    p {
+      border-bottom: 1px solid $lightGrey;
+      padding-bottom: 0.25em;
+    }
+    .plan {
+      a {
+        color: $lightBlue;
+        &:hover {
+          color: coral;
+        }
+      }
+    }
+    .cancel-wrapper {
+      border-bottom: 1px solid $lightGrey;
+      padding-bottom: 0.25em;
+      #cancel-btn {
+        background: black;
+        color: $lightGrey;
+        border: none;
+        font-size: 1em;
+        margin-left: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .table-wrapper {
+    text-align: center;
+    h2 {
+      text-align: left;
+      color: $lightBlue;
+    }
+    table {
+      text-align: center;
+      padding-left: 0;
+      thead {
+      }
+      tbody {
+        .exclusive {
+        }
+        .tags {
+        }
+        .meta-tag-wrapper {
+          .meta-tag {
+            border: 1px solid $lightBlue;
+            cursor: auto;
+          }
+        }
+      }
+    }
+  }
+}

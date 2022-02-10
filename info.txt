@@ -1,0 +1,79 @@
+TO GO LIVE:
+- precompile your scripts for production - https://babeljs.io/docs/setup/
+
+TODO
+- create a docs for the API
+- create staging environment for future updates
+     - checkout new branch for development (branch per feature -> development -> master (production))
+- write tests for (staging)
+
+- play button doesn't have black bars in it
+- scroll bar always visible for sounds page x-scroll (windows only)
+
+- on resend verification, remove hash and update message
+
+Sounds Page
+- if not authorized for a requset (403?) it sits in loading not finishing fetch (count and such) -> redirect to login
+
+- packs page loading circle needs to be centered
+
+
+Future Features
+- know which OS user is on to download the correct version of VST/PLUGIN
+    <script>
+      var osVersion = "Not known";
+      console.log(navigator.appVersion)
+      if (navigator.appVersion.indexOf("Win") != -1) Name = "Windows OS";
+      else if (navigator.appVersion.indexOf("Mac") != -1) Name = "MacOS";
+      else if (navigator.appVersion.indexOf("X11") != -1) Name = "UNIX OS";
+      else if (navigator.appVersion.indexOf("Linux") != -1) Name = "Linux OS";
+      console.log(osVersion);
+    </script>
+
+- refactor for filtering and seraching (not returning full list, limit/offset)
+- change password
+- cache images and other data for faster load time
+- DRY CODE DRY DRY DRY DRY DRY DRY DRY DRY DRY!!!!!!!!
+    - extract all functions
+- sample-packs page -> pagination
+- authentication page -> login/register button loading symbol (let user know it is processing)
+- contact page -> boxes go red after submiting form
+- sounds page - populate nonUserDownloads ONLY (do it in the fetch function)
+- ADMIN FUNCTIONALITY --> UPDATE DATABASE
+    - REFACTOR TO NOT USE DYNAMODB USE TAGS IN LOCAL DB AND DON'T PULL SOUNDLIST FROM S3 BUCKET (ONLY STREAM)
+    CRUD multiple songs???
+    - CRUD youtube videos
+    - CRUD songs/packs
+    - CRUD featured songs
+    - CRUD FAQ's
+- SPEED -> Cache results on express server
+- POPULATE LIMIT ON SOUNDS PAGE AND NOT DISPLAY USER DOWNLOADS/OTHER EXCLUSIVE DOWNLOADS (FETCH MORE)
+- update subscription plan instead of cancel/resubscribe
+- author page (for creators of the sounds)
+- liked sounds for user
+- invite friends
+- trial period
+- favorite sounds
+- 'follow' sound authors
+- new releases/trending/popular categories
+- Rent-To-Own/Free/For-Sale Plugins
+- chat? zendesk
+- implement coupon codes
+- authors to submit/upload packs (not singles) -> pay authors for sales (royalties)
+- waveform for sounds page
+- change password (hash forgot/change)
+- create next url for fetching sounds (rather than state for limit/offset)
+- style error for pack page (unable to download)
+
+SECURITY
+- add paypal ipn ip address
+- people sharing accounts w/ friends (limit ip address) max 5 (DO RESEARCH HERE)
+
+FUNCTIONS
+- fetchCovers
+    - change to a get w/ cover list in array
+
+
+
+Resources
+- https://stackoverflow.com/questions/23507200/good-practices-for-designing-monthly-subscription-system-in-database

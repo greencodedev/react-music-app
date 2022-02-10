@@ -1,0 +1,104 @@
+body {
+  background: black !important;
+}
+
+#account {
+  margin: 4em;
+  color: #c3c1c1;
+}
+
+#account .profile-info {
+  width: 80%;
+  padding-bottom: 0.25em;
+  margin-bottom: 7em;
+}
+
+@media (max-width: 360px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1680px) {
+  #account .profile-info,
+  #account .profile-info p {
+    width: 100%;
+  }
+}
+
+#account .profile-info p {
+  border-bottom: 1px solid #c3c1c1;
+  padding-bottom: 0.25em;
+}
+
+#account .profile-info .plan a {
+  color: #00bdf5;
+}
+
+#account .profile-info .plan a:hover {
+  color: coral;
+}
+
+#account .profile-info .cancel-wrapper {
+  border-bottom: 1px solid #c3c1c1;
+  padding-bottom: 0.25em;
+}
+
+#account .profile-info .cancel-wrapper #cancel-btn {
+  background: black;
+  color: #c3c1c1;
+  border: none;
+  font-size: 1em;
+  margin-left: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#account .table-wrapper {
+  text-align: center;
+}
+
+#account .table-wrapper h2 {
+  text-align: left;
+  color: #00bdf5;
+}
+
+#account .table-wrapper table {
+  text-align: center;
+  padding-left: 0;
+}
+
+#account .table-wrapper table tbody .meta-tag-wrapper .meta-tag {
+  border: 1px solid #00bdf5;
+  cursor: auto;
+}
+/*# sourceMappingURL=account.css.map */

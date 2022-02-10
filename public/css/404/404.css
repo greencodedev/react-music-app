@@ -1,0 +1,115 @@
+.lost {
+  background: black !important;
+  color: #c3c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.lost .music-notes {
+  width: 10%;
+  position: absolute;
+  top: 3em;
+  left: 3em;
+}
+
+@media (max-width: 360px) {
+  .lost .music-notes {
+    width: 15%;
+    top: 2em;
+    left: 2em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .lost .music-notes {
+    width: 15%;
+    top: 2em;
+    left: 2em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .lost .music-notes {
+    width: 15%;
+    top: 2em;
+    left: 2em;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .lost .music-notes {
+    width: 15%;
+    top: 2em;
+    left: 2em;
+  }
+}
+
+.lost picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20vh auto 1em;
+}
+
+.lost picture .chrome-404 {
+  width: 45%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.lost .lost-message {
+  margin: 1em auto 15vh;
+  font-size: 2em;
+  word-spacing: 0.15em;
+}
+
+@media (max-width: 360px) {
+  .lost .lost-message {
+    font-size: 1.75em;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .lost .lost-message {
+    font-size: 1.75em;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .lost .lost-message {
+    font-size: 1.75em;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  .lost .lost-message {
+    font-size: 1.75em;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+.lost .lost-message a {
+  color: #00bdf5;
+}
+/*# sourceMappingURL=404.css.map */

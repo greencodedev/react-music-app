@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QE60PQMHYD"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QE60PQMHYD");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../SampleHouse_favicon-64.png" />
+    <link rel="stylesheet" href="../css/core.css" />
+    <link rel="stylesheet" href="../css/success/success.css" />
+    <title>Success</title>
+  </head>
+  <body>
+    <script src="../js/utils/jwt-decode.js"></script>
+    <script src="../js/utils/jwt-verify.js"></script>
+    <script type="module">
+      const token = window.localStorage.getItem("samplehousetoken");
+      if (!token || (token && !jwt_verify(jwt_decode(token))))
+        window.location = "/";
+    </script>
+    <header id="header"></header>
+    <nav id="sticky-nav"></nav>
+    <nav id="hamburger-menu"></nav>
+
+    <!--! Content goes here -->
+    <!-- base off # -->
+    <div id="success">
+      <h1 id="message"></h1>
+      <p>Please allow up to 20 minutes for PayPal to process the request.</p>
+    </div>
+
+    <script>
+      const hash = window.location.hash.replace("#", "");
+      const message = document.getElementById("message");
+      const product = hash.substring(hash.indexOf("-") + 1).toUpperCase();
+
+      if (hash.includes("unsubscribe"))
+        message.innerText = "YOU HAE SUCCESSFULLY UNSUBSCRIBED";
+      else if (hash.includes("subscribe"))
+        message.innerText = `SUCCESSFUL SUBSCRIPTION TO ${product}.`;
+      else if (hash.includes("offer"))
+        message.innerText = `SUCCESSFUL PURCHASE FOR ${product}.`;
+      else window.location = "home";
+    </script>
+
+    <footer id="footer"></footer>
+    <!--* Load React. -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--* Load React components -->
+    <script type="text/babel" src="../js/header.jsx"></script>
+    <script type="text/babel" src="../js/sticky-nav.jsx"></script>
+    <script type="text/babel" src="../js/hamburgerMenu.jsx"></script>
+    <script type="text/babel" src="../js/footer.jsx"></script>
+  </body>
+</html>

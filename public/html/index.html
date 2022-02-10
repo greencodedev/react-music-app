@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QE60PQMHYD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QE60PQMHYD");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../SampleHouse_favicon-64.png" />
+    <link rel="stylesheet" href="../css/core.css" text="text/css" />
+    <link rel="stylesheet" href="../css/index/index.css" text="text/css" />
+    <title>Sample.House</title>
+  </head>
+  <body id="body">
+    <script src="../js/utils/jwt-decode.js"></script>
+    <script src="../js/utils/jwt-verify.js"></script>
+    <script type="module">
+      const token = window.localStorage.getItem("samplehousetoken");
+      if (token && jwt_verify(jwt_decode(token))) window.location = "home";
+    </script>
+
+    <header id="header"></header>
+    <nav id="sticky-nav"></nav>
+    <nav id="hamburger-menu"></nav>
+    <section class="inspire">
+      <h2>We Inspire. You Create!</h2>
+      <ul>
+        <li>
+          Exclusive Loops - <br />
+          <p>
+            One Download Then<br />
+            Removed From the Site
+          </p>
+        </li>
+        <li>Sample Packs</li>
+        <li>One Shots</li>
+        <li>Original Plugins</li>
+      </ul>
+    </section>
+    <div class="wrapper">
+      <section id="products"></section>
+      <section id="about">
+        <h3>ABOUT <span>Sample.House</span></h3>
+        <p>
+          SampleHouse is a team of producers, sound designers, & VST developers
+          that work hard to bring unique sounds to producers, composers, &
+          songwriters. All of our samples & loops are hand-crafted to bring a
+          unique sound to your composition.
+        </p>
+      </section>
+      <div class="loops">
+        <h2>Exclusive Loops</h2>
+        <!--! image of vst from blue -> turquoise -->
+        <picture>
+          <source
+            srcset="../assets/exclusive_loops.webp"
+            alt=""
+            type="image/webp"
+          />
+          <img src="../assets/exclusive_loops.png" alt="" />
+        </picture>
+        <p>
+          <span>No more duplicate samples</span> used on hundreds of songs. Once
+          a loop is downloaded, it is removed from the site. You will be the
+          only person with that loop! Search our exclusive loops library with
+          new loops added every day!
+        </p>
+      </div>
+      <section id="pricing">
+        <h2>
+          Subscription Pricing<br /><span>&#42;Pricing is per month</span>
+        </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Features<br /></th>
+              <th>Starter<br />$5.99<br /></th>
+              <th>Standard<br />$10.99<br /></th>
+              <th>Studio<br />$19.99<br /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>VST Access</td>
+              <td>X</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Instructional Videos (coming soon)</td>
+              <td>X</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Samples (one shots)</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Loops</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Exclusive Loops</td>
+              <td>X</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>MIDI Files</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Private Discord</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+              <td>&#10004;</td>
+            </tr>
+            <tr>
+              <td>Credits per month</td>
+              <td>100</td>
+              <td>250</td>
+              <td>500</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="faq"></section>
+    </div>
+    <footer id="footer"></footer>
+
+    <!--* Load React. -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--* Load React components -->
+    <script type="text/babel" src="../js/header.jsx"></script>
+    <script type="text/babel" src="../js/sticky-nav.jsx"></script>
+    <script type="text/babel" src="../js/hamburgerMenu.jsx"></script>
+    <script type="text/babel" src="../js/product.jsx"></script>
+    <script type="text/babel" src="../js/faq.jsx"></script>
+    <script type="text/babel" src="../js/footer.jsx"></script>
+  </body>
+</html>

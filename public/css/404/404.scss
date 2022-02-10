@@ -1,0 +1,46 @@
+@import "../utils/mixins.scss";
+
+.lost {
+  background: black !important;
+  color: $lightGrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  position: relative;
+  .music-notes {
+    width: 10%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    @include breakpoint(xxs, xs, s, m) {
+      width: 15%;
+      top: 2em;
+      left: 2em;
+    }
+  }
+  picture {
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto 1em;
+    .chrome-404 {
+      width: 45%;
+      align-self: center;
+    }
+  }
+
+  .lost-message {
+    margin: 1em auto 15vh;
+    font-size: 2em;
+    word-spacing: 0.15em;
+    @include breakpoint(xxs, xs, s, m) {
+      font-size: 1.75em;
+      width: 70%;
+      text-align: center;
+    }
+
+    a {
+      color: $lightBlue;
+    }
+  }
+}

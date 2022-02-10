@@ -1,0 +1,169 @@
+@import "../utils/mixins.scss";
+
+#sounds {
+  .home-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .sound {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0 0.5em;
+      }
+    }
+
+    .search-wrapper {
+      display: flex;
+      background: black;
+      color: $lightBlue;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5em 4em;
+      box-shadow: 2px 2px 2px black;
+
+      @include breakpoint(xxs, xs, s) {
+        justify-content: space-between;
+        padding: 0.5em 1em;
+        h1 {
+          display: none;
+        }
+      }
+
+      .search-bar {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        @include breakpoint(m) {
+          width: 60%;
+        }
+
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+        }
+        #search {
+          width: 75%;
+          border-radius: 2em;
+          margin-right: 1em;
+          background: $teal;
+          color: $lightGrey;
+          border: 1px solid $lightBlue;
+          height: 1.5em;
+          font-size: 1.25em;
+          padding: 0.25em 0.5em;
+        }
+        #search-btn {
+          padding: 0 0.75em;
+          font-size: 1.125em;
+          border-radius: 2em;
+          background: $teal;
+          color: $lightGrey;
+          border: 1px solid $lightBlue;
+          cursor: pointer;
+        }
+        .credits {
+          text-align: center;
+          @include breakpoint(xxs, xs, s, m) {
+            // break word to next line?
+          }
+        }
+      }
+    }
+    .sound-wrapper {
+      display: flex;
+      overflow-x: scroll;
+      aside {
+        color: $lightGrey;
+        padding: 2em 3em 4em;
+        font-size: 1.2em;
+        background-image: linear-gradient(
+          black,
+          #026986 34.1%,
+          #026986 73.6%,
+          #000708 100%,
+          black
+        );
+        position: relative;
+
+        @include breakpoint(xxs, xs, s, m) {
+          padding: 2em 1em;
+        }
+
+        h2 {
+          margin: 0;
+          padding: 0;
+        }
+        h3 {
+          cursor: pointer;
+        }
+        .filter {
+          list-style: none;
+          padding: 0;
+          display: none;
+          cursor: pointer;
+          max-height: 15em;
+          overflow: scroll;
+
+          h6 {
+            font-size: 0.95em;
+            margin: 0;
+          }
+
+          .selected {
+            color: $lightBlue;
+          }
+        }
+        .reset-filter {
+          background: none;
+          color: $lightBlue;
+          font-size: 1.1em;
+          border: none;
+          padding: 0;
+          margin-top: 1em;
+          text-transform: capitalize;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px black;
+        }
+      }
+      div {
+        margin: 1em auto;
+        width: 100%;
+        overflow: auto;
+
+        .load-spinner {
+          width: 5em;
+          height: 5em;
+        }
+        .table-wrapper {
+          margin: auto;
+          margin-top: 2em;
+          display: flex;
+          flex-direction: column;
+          table {
+            .name-tags {
+              display: flex;
+              flex-direction: column;
+              .tags {
+                width: -webkit-min-content;
+                width: -moz-min-content;
+                width: min-content;
+                margin: 0;
+              }
+            }
+          }
+          .pagination {
+            margin: 2em auto;
+            button {
+              margin: 0 0.75em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 0;
+}

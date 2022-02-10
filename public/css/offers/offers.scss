@@ -1,0 +1,151 @@
+@import "../utils/mixins.scss";
+body {
+  background: black !important;
+  color: $lightGrey;
+}
+.no-subscription {
+  text-align: center;
+  margin: 5em auto;
+  font-size: 2.5em;
+  width: 90%;
+  a {
+    color: $lightBlue;
+    &:hover {
+      color: $success;
+    }
+  }
+}
+.top {
+  border-bottom: 1px solid $lightGrey;
+  margin-bottom: 4.5em;
+  padding-left: 2em;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    color: $lightGrey;
+  }
+  .renew {
+    margin-left: 8em;
+    font-size: 0.85em;
+    color: $lightGrey;
+  }
+}
+#offer-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6em;
+  margin-top: 5em;
+  @include breakpoint(xxs, xs, s) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    background: black;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid $lightGrey;
+    height: 20em;
+    width: 25%;
+    position: relative;
+    font-size: 1.1em;
+    border-radius: 1em;
+    cursor: pointer;
+
+    @include breakpoint(xxs, xs, s) {
+      width: 70%;
+      margin-bottom: 5em;
+    }
+
+    h2 {
+      color: #eb6662;
+      margin: 0.5em auto;
+      border-radius: 1em;
+      padding: 0.5em 0;
+      text-shadow: 2px 3px 8px black;
+      letter-spacing: 0.125em;
+      font-size: 1.85em;
+    }
+    .discount {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $lightBlue;
+      color: black;
+      border-radius: 0 1em;
+      font-size: 0.9em;
+      font-weight: 700;
+      padding: 0.125em 1em;
+      border-top: 1px solid $lightGrey;
+      border-right: 1px solid $lightGrey;
+    }
+    .info {
+      background: black;
+      padding: 0.25em 0.5em;
+      border-radius: 1em;
+      position: absolute;
+      font-size: 1em;
+      top: 6em;
+      right: 1em;
+      bottom: 1em;
+      left: 1em;
+
+      .credits {
+        color: $lightBlue;
+        font-size: 1.4em;
+        white-space: nowrap;
+        margin: 0.25em auto 0.5em;
+      }
+      .price {
+        margin: 0 auto;
+        font-size: 1.35em;
+        font-weight: 500;
+        letter-spacing: 0.075em;
+      }
+      span {
+        font-size: 0.9em;
+      }
+      .included {
+        color: $lightBlue;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        li {
+          margin-bottom: 0.25em;
+          font-weight: 300;
+          @include breakpoint(xxs, xs, s) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.payment {
+  margin-bottom: 7em;
+  @include breakpoint(xxs, xs, s, m) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    color: $lightGrey;
+    text-align: center;
+    margin-bottom: 5em;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoint(xxs, xs, s) {
+      flex-direction: column;
+    }
+    .paypal-logo {
+      height: 10em;
+      width: 25em;
+    }
+  }
+}

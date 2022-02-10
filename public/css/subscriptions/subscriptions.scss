@@ -1,0 +1,177 @@
+@import "../utils/mixins.scss";
+body {
+  background: black !important;
+  color: $lightGrey;
+  text-transform: uppercase;
+}
+.subscription-plan {
+  text-align: center;
+}
+.top {
+  border-bottom: 1px solid $lightGrey;
+  margin-bottom: 1em;
+  padding-left: 2em;
+
+  div {
+    margin: 2em 0;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+      margin-top: 0;
+      color: $lightGrey;
+    }
+    .renew {
+      font-size: 1em;
+      color: $lightGrey;
+      margin-bottom: 0;
+      word-spacing: 0.1em;
+    }
+  }
+}
+.choose-card {
+  margin: 2em auto 2em 2em;
+  font-size: 1em;
+  word-spacing: 0.1em;
+}
+#subscription-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6em;
+  font-family: Helvetica Neue, Helvetica, Poppins;
+  font-weight: 600;
+  @include breakpoint(xxs, xs, s, m) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    background: black;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 4px solid $teal;
+    height: 36em;
+    width: 25%;
+    position: relative;
+    font-size: 1.35em;
+    border-radius: 1em;
+    cursor: pointer;
+    overflow: scroll;
+
+    @include breakpoint(xxs, xs, s, m) {
+      width: 70%;
+      margin-bottom: 5em;
+    }
+
+    h2 {
+      color: #eb6662;
+      margin: 0.5em auto;
+      border-radius: 1em;
+      padding: 0.5em 0;
+      text-shadow: 2px 3px 8px black;
+      letter-spacing: 0.125em;
+      font-size: 2em;
+      @include breakpoint(l) {
+        font-size: 1.7em;
+      }
+    }
+    .discount {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $lightBlue;
+      color: black;
+      border-radius: 0 1em;
+      font-size: 0.9em;
+      font-weight: 700;
+      padding: 0.125em 1em;
+      border-top: 1px solid $lightGrey;
+      border-right: 1px solid $lightGrey;
+    }
+    .info {
+      background: black;
+      padding: 0.25em 0.5em;
+      border-radius: 1em;
+      position: absolute;
+      top: 6.5em;
+      right: 1em;
+      bottom: 1em;
+      left: 1em;
+      @include breakpoint(l) {
+        left: 0;
+        right: 0;
+      }
+
+      .download {
+        font-size: 0.9em;
+        margin-bottom: 1em;
+        font-weight: 500;
+      }
+      .credits {
+        color: $lightBlue;
+        font-size: 1.5em;
+        white-space: nowrap;
+        margin: 0.25em auto 0.5em;
+        font-weight: 500;
+      }
+      .price {
+        margin: 0 auto;
+        font-size: 1.25em;
+        letter-spacing: 0.075em;
+      }
+      .month {
+        font-size: 0.8em;
+        font-weight: 400;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin: 2em auto 0;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        width: 100%;
+
+        .included {
+          color: $lightBlue;
+          font-weight: 500;
+          margin-bottom: 1em;
+        }
+        li {
+          margin-bottom: 0.5em;
+          font-weight: 400;
+          word-wrap: break-word;
+          @include breakpoint(xxs, xs, s, m) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.payment {
+  margin-bottom: 7em;
+  @include breakpoint(xxs, xs, s, m) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    color: $lightGrey;
+    text-align: center;
+    margin-bottom: 5em;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoint(xxs, xs, s, m) {
+      flex-direction: column;
+    }
+    .paypal-logo {
+      height: 10em;
+      width: 25em;
+    }
+  }
+}

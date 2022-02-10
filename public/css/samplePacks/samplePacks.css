@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em auto;
+}
+
+#sample-packs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#sample-packs .pack {
+  width: 28%;
+  margin: 0 auto 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  #sample-packs .pack {
+    width: 41%;
+  }
+}
+
+@media (max-width: 360px) {
+  #sample-packs .pack {
+    width: 95%;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #sample-packs .pack {
+    width: 95%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #sample-packs .pack {
+    width: 95%;
+  }
+}
+
+#sample-packs .pack h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#sample-packs .pack img {
+  width: 100%;
+  height: 17em;
+}
+
+@media (max-width: 360px) {
+  #sample-packs .pack img {
+    height: 20em;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  #sample-packs .pack img {
+    height: 20em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  #sample-packs .pack img {
+    height: 20em;
+  }
+}
+
+#sample-packs .pack p {
+  width: 75%;
+  text-align: justify;
+}
+/*# sourceMappingURL=samplePacks.css.map */
